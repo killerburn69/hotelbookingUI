@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+        <div class="content__container l-3 m-6 c-6">
+            <aside class="content__container--wrap">
+                <div class="content__container--info">
+                    <div class="container__wrap">
+                        <span class="content__wrap-img">
+                            <img src="./assets/img/profilepic.png" alt="avatar" class="content__img" />
+                        </span>
+                        <div class="content__container--title">
+                            <h3 class="content--name">Aziz Acharki Ahmedh</h3>
+                            <a class="content-profile" href="">View profile</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content__container__select">
+                    <div class="content__list">
+                        <div class="content__item active">
+                            Edit Profile
+                        </div>
+                        <div class="content__item">
+                            Change Photos
+                        </div>
+                        <div class="content__item">
+                            Change Password
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <div class="menu__user l-9 m-6 c-6">
+            <!-- Edit user -->
+            <div class="menu__user--information active">
+                <h2 class="menu__title">Basic Information</h2>
+
+                <form action="" class="form--container" id="form">
+                    <div class="container--control">
+                        <div class="container--name l-6 m-6 c-12">
+                            <label for="firstName" class="field-label">First Name</label>
+                            <input type="text" name="firstName" id="firstName" class="input-name">
+
+                            <small></small>
+                        </div>
+
+                        <div class="container--name l-6 m-6 c-12">
+                            <label for="lastName" class="field-label">Last Name</label>
+                            <input type="text" name="lastName" id="lastName" class="input-name">
+
+                            <small></small>
+                        </div>
+                    </div>
+
+                    <div class="container--control">
+                        <div class="container--name l-6 m-6 c-12">
+                            <label for="dateOfBirth" class="field-label">Date of birth</label>
+                            <input type="date" name="dateOfBirth" id="dateOfBirth" placeholder="Select date" autocomplete="off" class="input-name">
+
+                            <small></small>
+                        </div>
+
+                        <div class="container--name l-3 m-6 c-6">
+                            <label for="iAm" class="field-label">I am</label>
+                            <select name="iAm" class="select-option input-name">
+                                <option class="option-click">Male</option>
+                                <option class="option-click">Female</option>
+                                <option class="option-click">Orther</option>
+                            </select>
+                        </div>
+
+                        <div class="container--name l-3 m-6 c-6">
+                            <label for="prefLanguage" class="field-label">Preferred Language</label>
+                            <select name="prefLanguage" class="select-option input-name">
+                                <option class="option-click">English</option>
+                                <option class="option-click">Spanish</option>
+                                <option class="option-click">Frech</option>
+                                <option class="option-click">Russian</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="container--control">
+                        <div class="container--name l-6 m-6 c-12">
+                            <label for="emailAddress" class="field-label">Email address</label>
+                            <input type="email" name="emailAddress" id="emailAddress" class="input-name">
+
+                            <small></small>
+                        </div>
+
+                        <div class="container--name l-6 m-6 c-12">
+                            <label for="phoneNumber" class="field-label">Phone number</label>
+                            <input type="text" name="phoneNumber" id="phoneNumber" class="input-name">
+
+                            <small></small>
+                        </div>
+                    </div>
+
+                    <div class="container--control">
+                        <div class="container--name l-12 m-12 c-12">
+                            <label for="whereLive" class="field-label">Where you live</label>
+                            <input type="text" name="whereLive" id="whereLive" class="input-name">
+
+                            <small></small>
+                        </div>
+                    </div>
+
+                    <div class="container--control">
+                        <div class="container--name l-12 m-12 c-12">
+                            <label for="describeYourself" class="field-label">Describe Yourself (Optional)</label>
+                            <textarea rows="5" name="describeYourself" id="describeYourself" class="input-name input-describe"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="submit-container">
+                        <input type="submit" value="Save Changes" class="submit-btn">
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- Change photo -->
+            <div class="menu__user--information">
+                <h2 class="menu__title">Profile Images</h2>
+                <h4 class="menu__title--cover">Cover Image</h4>
+                
+                <div class="menu__wrap">
+                    <div class="memu__add--img">
+                        <span tabindex="0" class="add-btn">
+                            <form action="/" method="get">
+                                <label for="photo" class="menu__upload-file">
+                                    <input type="file" name="" id="photo1" accept="image/*">
+                                    <span>Upload Photo</span>
+                                </label>  
+                            </form>
+                        </span>
+                    </div>
+
+                    <div class="menu__images">
+                        <div class="menu__images--btn">
+                            <div class="menu__images--info">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="menu__title--cover">Cover Image</h4>
+                
+                <div class="menu__wrap">
+                    <div class="memu__add--img">
+                        <span tabindex="0" class="add-btn">
+                            <form action="/" method="get">
+                                <label for="photo" class="menu__upload-file">
+                                    <input type="file" name="" id="photo2" accept="image/*">
+                                    <span>Upload Photo</span>
+                                </label>  
+                            </form>
+                        </span>
+                    </div>
+
+                    <div class="menu__images">
+                        <div class="menu__images--btn">
+                            <div class="menu__images--info">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="submit-container">
+                    <input type="submit" value="Save Changes" class="submit-btn">
+                </div>
+
+            </div>
+
+            <!-- Change password -->
+            <div class="menu__user--information">
+                <h2 class="menu__title">Change Password</h2>
+
+                <form action="" class="form--container">
+                    <div class="container--control">
+                        <div class="container--name l-6 m-6 c-12">
+                            <label for="oldPass" class="field-label">Enter old password</label>
+                            <input type="password" name="oldPass" id="oldPass" class="hide-pass input-name">
+                            <!-- close -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="eye1 eye-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                              </svg>
+                            
+                            <!-- open -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="eye1 eye-open hidden">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+
+                            <small></small>
+                              
+                        </div>
+
+                        <div class="container--name l-6 m-6 c-12">
+                            <label for="newPass" class="field-label">Enter new password</label>
+                            <input type="password" name="newPass" id="newPass" class="hide-pass input-name">
+                            <!-- close -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="eye2 eye-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                              </svg>
+                            
+                            <!-- open -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="eye2 eye-open hidden">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+
+                            <small></small>
+                        </div>
+                    </div>
+
+                    <div class="container--control">
+                        <div class="container--name l-12 m-12 c-12">
+                            <label for="confirmPass" class="field-label">Confirm new password</label>
+                            <input type="password" name="confirmPass" id="confirmPass" class="hide-pass input-name">
+                            <!-- close -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="eye3 eye-close">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                              </svg>
+                            
+                            <!-- open -->
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="eye3 eye-open hidden">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="submit-container">
+                        <input type="submit" value="Save Changes" class="submit-btn">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./changeActive.js"></script>
+    <script src="./hidePassword.js"></script>
+    <script src="./validation.js"></script>
+  </body>
+</html>
