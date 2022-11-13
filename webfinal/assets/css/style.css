@@ -235,7 +235,7 @@ input[type="file"] {
 .menu__icon {
     font-size: 24px;
 }
-
+.menu__images1,
 .menu__images {
     position: relative;
     top: 290px;
@@ -244,12 +244,10 @@ input[type="file"] {
     height: 104px;
     margin: 0 8px 8px 0;
     border: 1px solid rgb(230, 230, 230);
-}
-
-.menu__images--btn {
     padding: 5px;
-    border-radius: 3px;
-    border-color: rgb(230, 230, 230);
+    border-radius: 3px; 
+    background-position: center;
+    background-size: cover;
 }
 
 /* change passwword */

@@ -1,11 +1,9 @@
-let firstname = document.getElementById('firstName');
-let lastname = document.getElementById('lastName');
-let dateBirth = document.getElementById('dateOfBirth');
-let eMail = document.getElementById('emailAddress');
-let iPhone = document.getElementById('phoneNumber');
-let whereLive = document.getElementById('whereLive');
+// form change pass
+let oldPass = document.getElementById('oldPass');
+let newPass = document.getElementById('newPass');
+let confirmPass = document.getElementById('confirmPass');
 
-// let form = document.getElementById('form');
+let form = document.getElementById('form-2');
 
 // Show input error message
 function showError(input, message) {
@@ -21,18 +19,6 @@ function showSuccess(input) {
     formControl.className = 'container--name success'
     const small = formControl.querySelector('small')
     small.innerText = '';
-}
-
-// Check email is valid
-function checkEmail(input) {
-	const re =
-		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-
-	if (re.test(input.value.trim())) {
-		showSuccess(input)
-	} else {
-		showError(input, 'Please enter a valid email address!')
-	}
 }
 
 // Check required fields
@@ -66,27 +52,17 @@ function checkLength(input, min) {
 // Check passwords match
 function checkPasswordsMatch(input1, input2) {
 	if (input1.value !== input2.value) {
-		showError(input2, 'Passwords do not match')
+		showError(input2, 'Confirm password must be the same!')
 	}
-}
-
-// Get fieldname
-function getFieldName(input) {
-	return input.id.charAt(0).toUpperCase() + input.id.slice(1)
 }
 
 // Event listeners
 form.addEventListener('submit', function (e) {
 	e.preventDefault()
 
-	if (!checkRequired([firstname, lastname,dateBirth, eMail, iPhone, whereLive])) {
-		checkLength(firstname)
-		checkLength(lastname)
-        checkLength(dateBirth)
-		checkEmail(eMail)
-        checkLength(iPhone)
-        checkLength(whereLive)
-		// checkPasswordsMatch(passWord, passWord2)
+	if (!checkRequired([oldPass, newPass])) {
+		checkLength(newPass, 6)
+        checkPasswordsMatch(newPass, confirmPass)
 	}
 })
 
